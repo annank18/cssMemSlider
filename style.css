@@ -17,7 +17,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: teal;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5vh;
 }
 h1{
     margin: 0;
@@ -35,13 +35,12 @@ h1{
 }
 .slider{
     width: 400%;
-    height: 93vh;
+    height: 73vh;
     display: flex;
     align-items: center;
 }
 input{
-    display: inline;
-    visibility: hidden;
+    display: none;
 }
 .slide{
     width: 25%;
@@ -165,4 +164,42 @@ input{
 #button4:checked ~ .slider__container>.control__container>.navigation>#label4:active>.control{
     border: 0.143em solid white;
     box-shadow: 0 0 0.5rem white;
+}
+
+@media screen and (max-width: 768px) {
+    .control__container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3vh;
+    }
+    .slider{
+        height: 65vh;
+    }
+    .slide img{
+        height: 59vh;
+        width: 80%;
+    }
+    .slider__container{
+        width: 80%;
+    }
+    .text__container{
+    padding: 0;
+    width: 95%;
+    text-align: center;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    .navigation-btn{
+        padding:  0.5rem 0.5rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slider{
+        height: 50vh;
+    }
+    .slide img{
+        height: auto;
+    }
 }
