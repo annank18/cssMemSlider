@@ -185,7 +185,7 @@ input{
     .text__container{
     padding: 0;
     width: 95%;
-    text-align: center;
+    padding-left: 0.5rem;
     }
     .navigation-btn{
         padding:  0.5rem 0.5rem 0.5rem;
